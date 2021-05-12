@@ -66,7 +66,7 @@ io.on('connection', (socket) => {
     })
 
     // location event listener
-    socket.on("sendLocation" , (coords, callback) => {
+    socket.on("shareLocation" , (coords, callback) => {
         const user = getUser(socket.id)
 
         const url = `https://google.com/maps?q=${coords.latitude},${coords.longitude}`
